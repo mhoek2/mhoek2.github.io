@@ -74,7 +74,8 @@ body {
 	max-width:600px;
 	width:100%;
 	overflow:hidden;
-	--var-offset: 50%;		
+	--var-offset: 50%;	
+	margin: 0 auto;
 }
 .md_ba::after {
 	content: "";
@@ -258,6 +259,8 @@ body {
 			justify-content: center;
 		}
 		.projects .body .links {
+			position: absolute;
+			bottom: 5px;
 			padding: 0 10px;
 		}
 		.projects .body .links > a {
@@ -428,6 +431,7 @@ body {
 
 .languages {
 	display:flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	gap:0.5em;
 	margin: 1em 0;
@@ -568,6 +572,32 @@ body {
 @media only screen and (max-width: 1200px) {
 	.projects .grid-container {
 		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.profile {
+		flex-direction: column;
+		border:0px !important; 
+	}
+		.profile .about {
+			text-align: center;
+		}
+		.profile .about .title {
+			font-size: 2.25em;
+		}
+		.profile .about p {
+			margin: 0 auto;
+		}
+		.languages {
+			margin-top: 4em;
+			justify-content: center;
+		}
+		.profile .about .actions {
+			margin: 0 auto;
+		}
+}
+@media only screen and (max-width: 900px) {
+	.project-details {
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
