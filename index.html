@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0"/>
+     
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+   
+   
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/github-markdown.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="header">
+
+		<section class="profile">
+			<div class="me">
+				<div></div>
+			</div>
+				
+			<div class="about">
+				<h1>I'm Marco Hoekstra, a</h1>
+				<div class="title">Software Developer</div>
+				
+				<p>Passionate software developer. 
+				I enjoy building efficient and scalable applications, whether it's frontend interfaces or backend logic.
+				<br><br>
+				Always eager to learn new technologies and improve both code and user experience.
+				</p>
+				<div class="languages">
+					<div>PHP</div>
+					<div>JavaScript</div>
+					<div>HTML</div>
+					<div>CSS</div>
+					<div>Python</div>
+					<div>C</div>
+					<div>C++</div>
+					<div>MySQL</div>
+				</div>
+				
+				<div class="actions">
+					<a href="#projects" class="btn btn-bg-gradient btn-projects">Projects</a>
+				</div>
+			</div>
+		</section>
+		
+		<section class="projects">
+			<div class="grid-container" id="branches">
+				<div class="card">
+					<div class="card-content">
+						<div class="heading" style="--header-image: url('../logos/ember-engine.png');">
+						</div>
+						<span class="body">	
+							<span class="title">Ember Engine</span>
+							<div class="languages">
+								<div>Python</div>
+								<div>OpenGL</div>
+								<div>ImGui</div>
+							</div>
+							<div class="links">
+								<a href="https://github.com/mhoek2/EmberEngine" taget="_blank"><i class="fa-brands fa-github"></i></a>
+							</div>
+						</span>
+					</div>
+				</div>
+				
+				<div class="card">
+					<div class="card-content">
+						<div class="heading" style="--header-image: url('../assets/logos/vlam.png');">
+						</div>
+						<span class="body">
+							<span class="title">VLAM Training</span>
+							<div class="languages">
+								<div>PHP</div>
+								<div>HTML</div>
+								<div>CSS</div>
+								<div>JS</div>
+								<div>MySQL</div>
+							</div>
+							<div class="links">
+								<a href="https://github.com/mhoek2/vlam" taget="_blank"><i class="fa-brands fa-github"></i></a>
+							</div>
+						</span>
+					</div>
+				</div>
+				
+				<div class="card">
+					<div class="card-content">
+						<div class="heading" style="--header-image: url('../assets/logos/sentora.png');">
+						</div>
+						<span class="body">
+							<span class="title">Sentora Theme</span>
+							<div class="languages">
+								<div>PHP</div>
+								<div>CSS</div>
+								<div>JS</div>
+							</div>
+							<div class="links">
+								<a href="https://github.com/mhoek2/sentora-core" taget="_blank"><i class="fa-brands fa-github"></i></a>
+							</div>
+						</span>
+					</div>
+				</div>
+					
+				<div class="card">
+					<div class="card-content">
+						<div class="heading" style="--header-image: url('../assets/logos/ejk.png');">
+						</div>
+						<span class="body">
+							<span class="title">Vulkan Renderer</span>
+							<div class="languages">
+								<div>C</div>
+								<div>C++</div>
+								<div>Vulkan</div>
+							</div>
+							<div class="links">
+								<a href="https://jksunny.github.io/" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-brands fa-github"></i></a>
+							</div>
+						</span>
+					</div>
+				</div>
+					
+				<div class="card">
+					<div class="card-content">
+						<div class="heading" style="--header-image: url('../assets/logos/cross-compile-wasm.png');">
+						</div>
+						<span class="body">
+							<span class="title">Cross-Compile WebAssembly - x86 x64</span>
+							<div class="languages">
+								<div>C++</div>
+								<div>Emscripten</div>
+								<div>OpenGL</div>
+							</div>
+							<div class="links">
+								<a href="https://github.com/mhoek2/wasm-cross" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-brands fa-github"></i></a>
+								<a href="https://mhoek2.github.io/wasm-cross/" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-regular fa-eye"></i></a>
+							</div>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="new-container">
+		<div class="new-content dark">
+			<div>
+				<h2 class="text-grad-light-purple-grey">Version Control & CI</h2>
+				<p>I commly use GitHub for version control.</p>
+				
+				<div class="emphasize">
+					<p>I regularly use CI pipelines to automate tasks like running linters, generating static documentation, ensuring code quality</p>
+				</div>
+				<p>Integrating these tools helps maintain clean, consistent, and well-documented codebases.</p>
+			</div>
+			<div class="git-icon">
+				<i class="fa-brands fa-github"></i>
+			</div>
+		</div>
+
+		<div class="new-content light">
+			<div>
+				<h2>User Interfaces</h2>
+				<p>I enjoy designing and building intuitive and practical GUIs for applications.</p>
+				<div class="emphasize">
+					<p>I aim to create interfaces that are user-friendly and enhance the overall experience.</p>
+				</div>
+				<p>A well-crafted GUI can make powerful features accessible and enjoyable to use..</p>
+			</div>
+			<div class="git-icon">
+				<i class="fa-solid fa-display"></i>
+			</div>
+		</div>
+	</section>
+
+	<h3 class="project-details-title" id="projects">Projects</h3>
+	
+	<section class="project-details">
+		<article id="vlam_training"></article>
+		<article id="sentora_reboot"></article>
+		<article id="ember_engine"></article>
+		<article id="cross_compile_wasm"></article>
+	</section>
+
+ 
+    <script>
+        $(document).ready(function () {
+			
+			var md_ba = 
+			{
+				template: 	'<div class="md_ba"></div',
+				range: 		'<input type="range" min="0" max="100" value="50"/>',
+
+				parse: function( data )
+				{
+					var that = typeof this === "undefined" ? md_ba : this;
+					
+					data.$dom_element.find( "[alt=md_ba]" ).each( function() {
+						let img_0 = $(this);
+						let img_1 = $(this).next("img");
+						let md_ba = $(that.template);
+
+						$(img_0).before(md_ba);
+						$(md_ba).append(img_0).append(img_1);
+					});
+
+					data.$dom_element.find( ".md_ba" ).each( function() {
+						let md_ba = $( this );
+						$( md_ba ).append( that.range );
+						$( md_ba ).on( "input", "input[type=range]", function(){
+							$( md_ba ).css( "--var-offset", this.value + "%" );
+						});
+					});
+				}
+			}
+
+			/**
+			* @param {String} filename - The filename of a markdown (.md) to be loaded
+			*/			
+			function load_md( filename, dom_element, callback ) 
+			{
+				var data = { 
+					$dom_element: $(dom_element),
+				};
+				
+				$.get( filename, function ( html_string ) {
+					$(dom_element).html( marked.parse( html_string ) );
+
+					if ( callback )
+						callback( data );
+				});
+			}
+			
+			$( ".reference" ).each(function() {
+				var attr = $(this).attr('data-icon');
+
+				if (typeof attr !== typeof undefined && attr !== false) {
+					$(this).addClass('ja-icon');
+				  	$(this).css('--data-icon', 'url('+attr+')');
+				}
+				
+				// .reference:has(i) doesnt seem have full browser.projects?
+				if ($(this).find('i').length) {
+					$(this).addClass('fa-icon');
+				}
+			});
+				
+			function parse_project( data )
+			{
+				let $content = $('<div class="markdown-body"></div>');
+				let $body = $('<div class="card-container"></div>');
+				
+				$body.append( data.$dom_element.html() );
+				$content.append($body);
+				
+				data.$dom_element.html( $content );
+			}
+			
+			load_md( "assets/repo/ember_engine.md", "#ember_engine", function( data ) {
+				parse_project( data );
+				md_ba.parse( data );
+			});
+			
+			load_md( "assets/repo/sentora_reboot.md", "#sentora_reboot", function( data ) {
+				parse_project( data );
+				md_ba.parse( data );
+			});
+			
+			load_md( "assets/repo/vlam_training.md", "#vlam_training", function( data ) {
+				parse_project( data );
+				md_ba.parse( data );
+			});
+			
+			load_md( "assets/repo/cross_compile_wasm.md", "#cross_compile_wasm", function( data ) {
+				parse_project( data );
+				md_ba.parse( data );
+			});
+        });
+    </script>
+</body>
+</html>

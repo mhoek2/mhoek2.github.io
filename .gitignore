@@ -1,0 +1,6 @@
+# Ignore Photoshop files
+*.psd
+
+# Ignore Blender files
+*.blend
+*.blend1
