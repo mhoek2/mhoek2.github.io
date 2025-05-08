@@ -49,58 +49,59 @@
 		</section>
 		
 		<section class="projects">
-			<div class="grid-container" id="branches">
+			<div class="grid-container">
 				<div class="card">
-					<div class="card-content">
+					<div class="card-content" data-project-id="ember_engine">
 						<div class="heading" style="--header-image: url('../logos/ember-engine.png');">
 						</div>
 						<span class="body">	
 							<span class="title">Ember Engine</span>
-							<div class="languages">
-								<div>Python</div>
-								<div>OpenGL</div>
-								<div>ImGui</div>
-							</div>
+							<div class="languages"></div>
 							<div class="links">
-								<a href="https://github.com/mhoek2/EmberEngine" taget="_blank"><i class="fa-brands fa-github"></i></a>
+								<div>
+									<a href="https://github.com/mhoek2/EmberEngine" taget="_blank"><i class="fa-brands fa-github"></i></a>
+								</div>
+								<div>
+									<a href="#" class="more">details</a>
+								</div>
 							</div>
 						</span>
 					</div>
 				</div>
 				
-				<div class="card">
+				<div class="card" data-project-id="vlam_training">
 					<div class="card-content">
 						<div class="heading" style="--header-image: url('../logos/vlam.png');">
 						</div>
 						<span class="body">
 							<span class="title">VLAM Training</span>
-							<div class="languages">
-								<div>PHP</div>
-								<div>HTML</div>
-								<div>CSS</div>
-								<div>JS</div>
-								<div>MySQL</div>
-							</div>
+							<div class="languages"></div>
 							<div class="links">
-								<a href="https://github.com/mhoek2/vlam" taget="_blank"><i class="fa-brands fa-github"></i></a>
+								<div>
+									<a href="https://github.com/mhoek2/vlam" taget="_blank"><i class="fa-brands fa-github"></i></a>
+								</div>
+								<div>
+									<a href="#" class="more">details</a>
+								</div>
 							</div>
 						</span>
 					</div>
 				</div>
 				
-				<div class="card">
+				<div class="card" data-project-id="sentora_reboot">
 					<div class="card-content">
 						<div class="heading" style="--header-image: url('../logos/sentora.png');">
 						</div>
 						<span class="body">
 							<span class="title">Sentora Theme</span>
-							<div class="languages">
-								<div>PHP</div>
-								<div>CSS</div>
-								<div>JS</div>
-							</div>
+							<div class="languages"></div>
 							<div class="links">
-								<a href="https://github.com/mhoek2/sentora-core" taget="_blank"><i class="fa-brands fa-github"></i></a>
+								<div>
+									<a href="https://github.com/mhoek2/sentora-core" taget="_blank"><i class="fa-brands fa-github"></i></a>
+								</div>
+								<div>
+									<a href="#" class="more">details</a>
+								</div>
 							</div>
 						</span>
 					</div>
@@ -118,26 +119,29 @@
 								<div>Vulkan</div>
 							</div>
 							<div class="links">
-								<a href="https://jksunny.github.io/" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-brands fa-github"></i></a>
+								<div>
+									<a href="https://jksunny.github.io/" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-solid fa-circle-info"></i></a>
+								</div>
 							</div>
 						</span>
 					</div>
 				</div>
 					
-				<div class="card">
+				<div class="card" data-project-id="cross_compile_wasm">
 					<div class="card-content">
 						<div class="heading" style="--header-image: url('../logos/cross-compile-wasm.png');">
 						</div>
 						<span class="body">
 							<span class="title">Cross-Compile WebAssembly - x86 x64</span>
-							<div class="languages">
-								<div>C++</div>
-								<div>Emscripten</div>
-								<div>OpenGL</div>
-							</div>
+							<div class="languages"></div>
 							<div class="links">
-								<a href="https://github.com/mhoek2/wasm-cross" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-brands fa-github"></i></a>
-								<a href="https://mhoek2.github.io/wasm-cross/" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-regular fa-eye"></i></a>
+								<div>
+									<a href="https://github.com/mhoek2/wasm-cross" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-brands fa-github"></i></a>
+									<a href="https://mhoek2.github.io/wasm-cross/" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-regular fa-eye"></i></a>
+								</div>
+								<div>
+									<a href="#" class="more">details</a>
+								</div>
 							</div>
 						</span>
 					</div>
@@ -224,7 +228,9 @@
 			function load_md( filename, dom_element, callback ) 
 			{
 				var data = { 
+					dom_element_id: dom_element,
 					$dom_element: $(dom_element),
+					tags: [],
 				};
 				
 				$.get( filename, function ( html_string ) {
@@ -249,12 +255,45 @@
 				}
 			});
 				
+			$( ".projects .links .more" ).each(function() {
+				$(this).attr('href')
+			});
+
+				
 			function parse_project( data )
 			{
 				let $content = $('<div class="markdown-body"></div>');
 				let $body = $('<div class="card-container"></div>');
 				
+				$(`[data-project-id="${data.dom_element_id.substring(1)}"] .links .more`).attr('href', data.dom_element_id);
+				
 				$body.append( data.$dom_element.html() );
+
+				$body.find('pre code').each(function() {
+					let content = $(this).text().trim();
+					let regex = /^tags\[(.*)\]$/;
+					let $card = $body;
+					
+					let match = regex.exec( content );
+					if ( match.length > 0 ) {
+						let $tags = $('<div class="languages"></div>');
+						
+						match[1].split(',').map(function(item) {
+							let tag = item.trim()
+							if ( typeof data.tags[tag] === 'undefined' )
+								data.tags[tag] = {cards: []};
+							
+							data.tags[tag].cards.push( $card );
+							$tags.append("<div>"+ tag +"</div>");
+						});
+						
+						$card.prepend( $tags );
+						$(this).parent().remove();
+						
+						$(`[data-project-id="${data.dom_element_id.substring(1)}"] .body .languages`).replaceWith($tags);
+					}
+				});
+				
 				$content.append($body);
 				
 				data.$dom_element.html( $content );

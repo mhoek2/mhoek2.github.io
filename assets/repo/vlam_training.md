@@ -1,18 +1,16 @@
 ﻿### VLAM Training
-
+	tags[PHP,HTML,CSS,JS,MySQL]
 ![md_ba](assets/illustrations/vlam1.png)
 ![](assets/illustrations/vlam0.png)	
 
-REA College requested an E-learning platform that extend the use of the handbook for the **VLAM Training**. \
-The application is built on top of CodeIgniter4 with CI Shield.
+REA College works on an E-learning platform intended to extend the use of a handbook for the **[VLAM Training](https://www.hanze.nl/nl/onderzoeken/centers/centre-of-expertise-healthy-ageing/projecten/voorbereid-van-leeromgeving-naar-arbeidsmarkt-vlam)**. 
 
-The front-end allows candidate to work on cases and answer related questions in assignments. 
-This builds a personal dashboard showing their progress.
+My role is to provide the fundamentals of the application, **frontend & backend**.\
+So it can be extended with more features by other developers/students in the future. 
 
-Also, a admin panel is built for administrators. 
-They can create the assignments and cases for the training.
-
-My role is to provide the fundamentals of the application, so it can be extended with more features by other developers in the future.
+I translated a Figma design provided by the team to a functional web interface. \
+I designed the database and admin panel, allowing to manage all aspects of the training content and user progress. \
+The application is built with CodeIgniter4 with CI Shield at its core.
 
 I included **[Github CI](https://github.com/mhoek2/EmberEngine/blob/main/.github/workflows/docs.yml)** to build automated 
 documentation using [phpDocumentor](https://phpdoc.org/), [SchemaSpy](https://schemaspy.org/) and [PhpMetrics](https://phpmetrics.org/). 

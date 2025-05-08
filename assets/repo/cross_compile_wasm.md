@@ -1,5 +1,5 @@
 ﻿### Cross-Compile WebAssembly - x86 x64
-
+	tags[C++,OpenGL,Emscripten]
 ![cross-compile](assets/illustrations/wasm-cross-compile.png)
 
 [![build](https://github.com/mhoek2/wasm-cross/actions/workflows/build.yml/badge.svg)](https://github.com/mhoek2/wasm-cross/actions/workflows/build.yml)
@@ -11,7 +11,7 @@ This demo shows a core principles of WebAssembly compiling using [Emscripten](ht
 
 Displaying a rotating 3D model of the Earth using GLFW with OpenGL or GLES3-WebGL2.
 
-I included **[Github CI](https://github.com/mhoek2/wasm-cross/blob/main/.github/workflows/build.yml)** to cross-compile for **WebAssembly** and native a **[Windows x86 & x64](https://github.com/mhoek2/wasm-cross/releases)** application.
+I included **[Github CI](https://github.com/mhoek2/wasm-cross/blob/main/.github/workflows/build.yml)** to cross-compile for **WebAssembly** and a native **[Windows x86 & x64](https://github.com/mhoek2/wasm-cross/releases)** application.
 
 > Emscripten compiles C and C++ to [WebAssembly](https://webassembly.org/) using
 [LLVM](https://en.wikipedia.org/wiki/LLVM) and

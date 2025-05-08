@@ -1,5 +1,5 @@
 ﻿### Ember Engine
-
+	tags[Python,OpenGL,ImGui]
 <video width="100%" style="margin-bottom: 16px" controls>
 	<source src="https://github.com/user-attachments/assets/7746df9e-e854-4730-9cb1-69f35433d842" type="video/mp4">
 	Your browser does not support the video tag.

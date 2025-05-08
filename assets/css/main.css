@@ -259,14 +259,37 @@ body {
 			justify-content: center;
 		}
 		.projects .body .links {
-			position: absolute;
+			position: fixed;
 			bottom: 5px;
 			padding: 0 10px;
+			width: 100%;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-between;
 		}
-		.projects .body .links > a {
-			margin-right:10px;
+		.projects .body .links > div {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		.projects .body .links a {
 			transition: color 200ms ease-in-out;
 		}
+		.projects .body .links a.more {
+			position:relative;
+			text-decoration: none;
+			font-size:12px;
+			padding-right: 14px;
+		}
+			.projects .body .links a.more::before {
+				content: "\f054";
+				font-family: "Font Awesome 6 Free";
+				font-weight: 900;
+				font-size: 10px;
+				position: absolute;
+				right: 0px;
+				top: 4px;
+			}
 	
 #branch-body, #header-body {
 	background: transparent;
@@ -549,12 +572,7 @@ body {
 		flex-direction: column;
 	}
 }
-@media only screen and (min-width: 1920px) {
-	.projects .grid-container {
-		grid-template-columns: repeat(7, 1fr);
-	}
-}
-@media only screen and (max-width: 2300px) {
+@media only screen and (min-width: 2300px) {
 	.projects .grid-container {
 		grid-template-columns: repeat(5, 1fr);
 	}
@@ -636,10 +654,10 @@ body {
 	.projects .body .title {
 		color: #cbcaca;
 	}
-	.projects .body .links > a {
+	.projects .body .links a {
 		color:#adadad;
 	}
-	.projects .body .links > a:hover {
+	.projects .body .links a:hover {
 		color:#f1f1f1;
 	}
 	.project-details .card-container > h3:nth-child(1) {
@@ -697,10 +715,10 @@ body {
 	.projects .body .title {
 		color: #3d3d3d;
 	}
-	.projects .body .links > a {
+	.projects .body .links a {
 		color:#adadad;
 	}
-	.projects .body .links > a:hover {
+	.projects .body .links a:hover {
 		color:#3d3d3d;
 	}
 	.project-details .card-container > h3:nth-child(1) {
