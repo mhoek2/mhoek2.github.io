@@ -146,6 +146,26 @@
 						</span>
 					</div>
 				</div>
+				
+				<div class="card" data-project-id="kentekencheck">
+					<div class="card-content">
+						<div class="heading" style="--header-image: url('../logos/kentekencheck.png');">
+						</div>
+						<span class="body">
+							<span class="title">Kenteken Check</span>
+							<div class="languages"></div>
+							<div class="links">
+								<div>
+									<a href="https://github.com/mhoek2/kentekencheck" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-brands fa-github"></i></a>
+									<a href="https://mhoek2.github.io/kentekencheck/kentekencheck/package-summary.html" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-regular fa-eye"></i></a>
+								</div>
+								<div>
+									<a href="#" class="more">details</a>
+								</div>
+							</div>
+						</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -188,6 +208,7 @@
 		<article id="sentora_reboot"></article>
 		<article id="ember_engine"></article>
 		<article id="cross_compile_wasm"></article>
+		<article id="kentekencheck"></article>
 	</section>
 
  
@@ -315,6 +336,11 @@
 			});
 			
 			load_md( "assets/repo/cross_compile_wasm.md", "#cross_compile_wasm", function( data ) {
+				parse_project( data );
+				md_ba.parse( data );
+			});
+			
+			load_md( "assets/repo/kentekencheck.md", "#kentekencheck", function( data ) {
 				parse_project( data );
 				md_ba.parse( data );
 			});
