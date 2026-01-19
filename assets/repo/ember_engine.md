@@ -5,8 +5,10 @@
 	Your browser does not support the video tag.
 </video>
 
+[![repo](https://img.shields.io/badge/View%20Repository-grey.svg?logo=github)](https://github.com/mhoek2/EmberEngine)
+ [![build](https://img.shields.io/badge/Docs-blue.svg?logo=googledocs&logoColor=ffffff&labelColor=0f63a0)](https://mhoek2.github.io/EmberEngine/)
+ [![build](https://github.com/mhoek2/EmberEngine/actions/workflows/docs.yml/badge.svg)](https://github.com/mhoek2/EmberEngine/actions/workflows/docs.yml)
 
-[![build](https://github.com/mhoek2/EmberEngine/actions/workflows/docs.yml/badge.svg)](https://github.com/mhoek2/EmberEngine/actions/workflows/docs.yml)
 
 This 3D engine is developed using Python, OpenGL and ImGui. \
 It demonstrates the core principles of 3D rendering and interactive graphics.

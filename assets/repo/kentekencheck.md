@@ -2,6 +2,9 @@
 	tags[Java, Swing, Jpackage]
 ![kentekencheck](assets/illustrations/kentekencheck.jpg)	
 
+[![repo](https://img.shields.io/badge/View%20Repository-grey.svg?logo=github)](https://github.com/mhoek2/kentekencheck)
+ [![build](https://img.shields.io/badge/Docs-blue.svg?logo=googledocs&logoColor=ffffff&labelColor=0f63a0)](https://mhoek2.github.io/kentekencheck/)
+
 This application is developed using **Java** and **Swing GUI**.
 
 For fetching dutch vehicle information using the **RDW** opendata **API**.\

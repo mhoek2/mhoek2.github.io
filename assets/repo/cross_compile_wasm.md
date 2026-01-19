@@ -2,7 +2,8 @@
 	tags[C++,OpenGL,Emscripten]
 ![cross-compile](assets/illustrations/wasm-cross-compile.png)
 
-[![build](https://github.com/mhoek2/wasm-cross/actions/workflows/build.yml/badge.svg)](https://github.com/mhoek2/wasm-cross/actions/workflows/build.yml)
+[![repo](https://img.shields.io/badge/View%20Repository-grey.svg?logo=github)](https://github.com/mhoek2/wasm-cross)
+ [![build](https://github.com/mhoek2/wasm-cross/actions/workflows/build.yml/badge.svg)](https://github.com/mhoek2/wasm-cross/actions/workflows/build.yml)
  [![windows-binaries](https://img.shields.io/badge/Windows%20Binaries-cyan.svg)](https://github.com/mhoek2/wasm-cross/releases)
  [![live-demo](https://img.shields.io/badge/Live%20Demo-orange.svg)](https://mhoek2.github.io/wasm-cross/)
 

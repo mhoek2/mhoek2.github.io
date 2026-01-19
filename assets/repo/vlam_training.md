@@ -3,6 +3,8 @@
 ![md_ba](assets/illustrations/vlam1.png)
 ![](assets/illustrations/vlam0.png)	
 
+[![repo](https://img.shields.io/badge/Private%20Repository-lightgrey.svg?logo=github)](#vlam_training)
+
 REA College works on an E-learning platform intended to extend the use of a handbook for the **[VLAM Training](https://www.hanze.nl/nl/onderzoeken/centers/centre-of-expertise-healthy-ageing/projecten/voorbereid-van-leeromgeving-naar-arbeidsmarkt-vlam)**. 
 
 My role is to provide the fundamentals of the application, **frontend & backend**.\

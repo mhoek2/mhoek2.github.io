@@ -3,6 +3,8 @@
 ![md_ba](assets/illustrations/sentora0.jpg)
 ![](assets/illustrations/sentora1.jpg)	
 
+[![repo](https://img.shields.io/badge/View%20Repository-grey.svg?logo=github)](https://github.com/mhoek2/sentora-core)
+
 **[Sentora](https://www.sentora.org/)** is a open-source web hosting control panel, which I host in my homelab environment. \
 I use it to prototype applications or other services that require a web environment.
 
