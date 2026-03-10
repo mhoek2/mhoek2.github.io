@@ -148,7 +148,27 @@
 						</span>
 					</div>
 				</div>
-				
+
+				<div class="card" data-project-id="esp32">
+					<div class="card-content">
+						<div class="heading" style="--header-image: url('../logos/esp32.png');">
+						</div>
+						<span class="body">
+							<span class="title">ESP32 Prototype</span>
+							<div class="languages"></div>
+							<div class="links">
+								<div>
+									<a href="https://github.com/mhoek2/esp32" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-brands fa-github"></i></a>
+									<a href="https://mhoek2.github.io/esp32/" rel="nofollow noopener noreferrer" taget="_blank"><i class="fa-regular fa-eye"></i></a>
+								</div>
+								<div>
+									<a href="#" class="more">details</a>
+								</div>
+							</div>
+						</span>
+					</div>
+				</div>
+
 				<div class="card" data-project-id="kentekencheck">
 					<div class="card-content">
 						<div class="heading" style="--header-image: url('../logos/kentekencheck.png');">
@@ -210,6 +230,7 @@
 		<article id="sentora_reboot"></article>
 		<article id="ember_engine"></article>
 		<article id="cross_compile_wasm"></article>
+		<article id="esp32"></article>
 		<article id="kentekencheck"></article>
 	</section>
 
@@ -342,6 +363,11 @@
 				md_ba.parse( data );
 			});
 			
+			load_md( "assets/repo/esp32.md", "#esp32", function( data ) {
+				parse_project( data );
+				md_ba.parse( data );
+			});
+
 			load_md( "assets/repo/kentekencheck.md", "#kentekencheck", function( data ) {
 				parse_project( data );
 				md_ba.parse( data );
