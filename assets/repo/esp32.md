@@ -4,7 +4,8 @@
 ![](assets/illustrations/esp32.png)	
 
 [![repo](https://img.shields.io/badge/View%20Repository-grey.svg?logo=github)](https://github.com/mhoek2/esp32)
- [![build](https://img.shields.io/badge/Docs-blue.svg?logo=googledocs&logoColor=ffffff&labelColor=0f63a0)](https://mhoek2.github.io/esp32/)
+[![build](https://img.shields.io/badge/Docs-blue.svg?logo=googledocs&logoColor=ffffff&labelColor=0f63a0)](https://mhoek2.github.io/esp32/)
+[![build](https://github.com/mhoek2/esp32/actions/workflows/docs.yml/badge.svg)](https://github.com/mhoek2/esp32/actions/workflows/docs.yml)
 
 Prototyping Firmware for ESP32 SoCs along with a separate self-hosted web-based dashboard.
 

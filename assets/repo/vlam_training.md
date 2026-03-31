@@ -3,7 +3,11 @@
 ![md_ba](assets/illustrations/vlam1.png)
 ![](assets/illustrations/vlam0.png)	
 
-[![repo](https://img.shields.io/badge/Private%20Repository-lightgrey.svg?logo=github)](#vlam_training)
+
+[![repo](https://img.shields.io/badge/View%20Repository-grey.svg?logo=github)](https://github.com/mhoek2/vlam)
+[![build](https://img.shields.io/badge/Docs-blue.svg?logo=googledocs&logoColor=ffffff&labelColor=0f63a0)](https://mhoek2.github.io/vlam/)
+[![build](https://github.com/mhoek2/vlam/actions/workflows/docs.yml/badge.svg)](https://github.com/mhoek2/vlam/actions/workflows/docs.yml)
+
 
 REA College works on an E-learning platform intended to extend the use of a handbook for the **[VLAM Training](https://www.hanze.nl/nl/onderzoeken/centers/centre-of-expertise-healthy-ageing/projecten/voorbereid-van-leeromgeving-naar-arbeidsmarkt-vlam)**. 
 
