@@ -7,6 +7,7 @@
 
 [![repo](https://img.shields.io/badge/View%20Repository-grey.svg?logo=github)](https://github.com/mhoek2/EmberEngine)
  [![build](https://img.shields.io/badge/Docs-blue.svg?logo=googledocs&logoColor=ffffff&labelColor=0f63a0)](https://mhoek2.github.io/EmberEngine/)
+ [![build](https://img.shields.io/badge/Demo-orange.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSI2MDAiIGhlaWdodD0iNjAwIj48cGF0aCBkPSJNMTI5IDExMWMtNTUgNC05MyA2Ni05MyA3OEwwIDM5OGMtMiA3MCAzNiA5MiA2OSA5MWgxYzc5IDAgODctNTcgMTMwLTEyOGgyMDFjNDMgNzEgNTAgMTI4IDEyOSAxMjhoMWMzMyAxIDcxLTIxIDY5LTkxbC0zNi0yMDljMC0xMi00MC03OC05OC03OGgtMTBjLTYzIDAtOTIgMzUtOTIgNDJIMjM2YzAtNy0yOS00Mi05Mi00MmgtMTV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+&logoColor=ffffff&labelColor=f5a742)](https://github.com/mhoek2/EmberEngine-demo)
  [![build](https://github.com/mhoek2/EmberEngine/actions/workflows/docs.yml/badge.svg)](https://github.com/mhoek2/EmberEngine/actions/workflows/docs.yml)
 
 
