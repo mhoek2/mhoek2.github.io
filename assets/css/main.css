@@ -643,6 +643,9 @@ body {
 	.btn.btn-bg-gradient::before {
 		background: linear-gradient(92deg, rgba(63, 116, 251, 1) 0%, rgb(114 78 211) 50%, rgb(70 218 252) 100%);
 	}
+	.btn.btn-bg-gradient.btn-github::before {
+		background: linear-gradient(92deg, rgb(195, 195, 223) 0%, rgb(166, 166, 167) 50%, rgb(154, 196, 189) 100%);
+    }
 	.btn.btn-bg-gradient::after {
 		background-color: #171c33;
 	}
